@@ -21,6 +21,11 @@
         html, body {
             height: 100%;
             overflow: hidden;
+            color: #d5ab00;
+        }
+        a:link, a:visited {
+            color: #d5ab00;
+            text-decoration: none;
         }
         .componentContainer {
             position: absolute;
@@ -41,18 +46,12 @@
             height: 100%;
         }
 
-        .reveal.themedArea {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 0;
-            width: 100%;
-            height: 100%;
-        }
-
         .slideContainer #step-9>div {
             background: black url("img/Erde.png") 0 250px no-repeat;
+        }
+        #step-start, #step-start a:link, #step-start a:visited,
+        #step-end,   #step-end   a:link, #step-end   a:visited {
+            color: #4e9e35;
         }
     </style>
 
@@ -106,42 +105,60 @@
     -webkit-transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg) translate3d(-500px, -1000px, 0px);">
 
 
-<div id="step-1" class="step active" data-x="0" data-y="1000" data-scale="3">
+<div id="step-start" class="step" data-x="-50000" data-y="0" data-z="150000" data-rotate-y="90" data-scale="100">
+    <div class="solid-bg-white slideContainer" style="width: 1024px; height: 768px">
+        <div class="transformContainer">
+            <img src="img/Joachim.png" style="float: left; padding: 20px; width: 300px"/>
+            <img src="img/justso.png" style="float: right; padding: 20px; width:150px"/>
+            <div style="font-size: 48px; padding-top: 30px" class="antialias">
+                Joachim Schirrmacher<br />
+                Justso GmbH
+            </div>
+            <div style="font-size: 32px; padding-top: 30px" class="antialias">
+                c/o Start FFM<br />
+                Seelenberger Straße 2<br />
+                Frankfurt am Main<br />
+                <a href="http://justso.de/">http://justso.de/</a>
+            </div>
+            <div style="font-size: 32px; padding-top: 30px" class="antialias">
+                <a href="http://twitter.com/jschirrmacher">@jschirrmacher</a><br />
+            </div>
+
+            <div style="font-size: 50px; clear: both; padding: 60px 30px; text-align: center" class="antialias">
+                Die einzig richtige Mobilentwicklung
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="step-1" class="step" data-x="0" data-y="1000" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
-        <div class="componentContainer fwrk-ignore " style="top: 156px; left: 3px;width: 1145px; height: 445.33px;">
-            <div class="transformContainer" style="-webkit-transform: scale(0.89, 0.89); transform: scale(0.89, 0.89); scale(0.89, 0.89)">
+        <div class="componentContainer fwrk-ignore " style="top: 156px; left: 0px;">
+            <div class="transformContainer">
                 <img src="img/Das%20einzig%20wahre....png">
             </div>
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 547px; left: 168px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 89px;" class="antialias">
-                    <font color="#d5ab00">Mobilentwicklung</font><br>
+                    Mobilentwicklung<br>
                 </div>
             </div>
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 67px; left: 233px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 72px;" class="antialias">
-                    <font color="#d5ab00">Die einzig richtige</font>
-                </div>
-            </div>
-        </div>
-
-        <div class="componentContainer fwrk-ignore " style="top: 700px; left: 58px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
-                <div style="font-size: 27px;" class="antialias">
-                    <font color="#d5ab00"><a href="http://www.justso.de/wer">Joachim Schirrmacher</a>&nbsp;<a href="http://twitter.com/jschirrmacher">@jschirrmacher</a>&nbsp;#WEMOOF 23.09.2013</font>
+                    Die einzig richtige
                 </div>
             </div>
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 516px; left: 884px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 14px;" class="antialias">
-                    <font color="#d5ab00">Quelle: Warsteiner</font>
+                    Quelle: Warsteiner
                 </div>
             </div>
         </div>
@@ -154,9 +171,9 @@
 <div id="step-2" class="step" data-x="6000" data-y="1000" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 84px; left: 133px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 48px;" class="antialias">
-                    <font color="#d5ab00">Warum überhaupt Mobilentwicklung?</font>
+                    Warum überhaupt Mobilentwicklung?
                 </div>
             </div>
         </div>
@@ -168,9 +185,9 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 659px; left: 164px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 48px;" class="antialias">
-                    <font color="#d5ab00">Verbreitung ist gewaltig gestiegen</font>
+                    Verbreitung ist gewaltig gestiegen
                 </div>
             </div>
         </div>
@@ -189,9 +206,9 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 84px; left: 133px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 48px;" class="antialias">
-                    <font color="#d5ab00">...und es werden immer mehr!</font>
+                    ...und es werden immer mehr!
                 </div>
             </div>
         </div>
@@ -204,9 +221,9 @@
 <div id="step-4" class="step" data-x="6000" data-y="5000" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 84px; left: 133px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 48px;" class="antialias">
-                    <font color="#d5ab00">... und immer neue Anwendungen ...</font>
+                    ... und immer neue Anwendungen ...
                 </div>
             </div>
         </div>
@@ -218,9 +235,9 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 225px; left: 77px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 34px;" class="antialias">
-                    <font color="#d5ab00">Navigation...</font>
+                    Navigation...
                 </div>
             </div>
         </div>
@@ -232,9 +249,9 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 648px; left: 316px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 34px;" class="antialias">
-                    <font color="#d5ab00">Bestellung...</font><br>
+                    Bestellung...<br>
                 </div>
             </div>
         </div>
@@ -246,9 +263,9 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 540px; left: 714px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 34px;" class="antialias">
-                    <font color="#d5ab00">Nachrichten...</font>
+                    Nachrichten...
                 </div>
             </div>
         </div>
@@ -261,7 +278,7 @@
 <div id="step-5" class="step" data-x="12000" data-y="5000" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 71px; left: 141px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 48px;" class="antialias">
                     <font color="#f6b500">Der Reiz des Nativen ...</font><br>
                 </div>
@@ -269,7 +286,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 252px; left: 169px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 32px;" class="antialias">
                     <font color="#75f800">Zugriff auf Hardwarefunktionen<br>z.B. Kamera, GPS, Kompass, ...</font><br>
                 </div>
@@ -277,7 +294,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 448px; left: 427px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 32px;" class="antialias">
                     <font color="#75f800">Maximale Performance<br>-&gt; z.B. sanftes Scrollen</font>
                 </div>
@@ -291,13 +308,13 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 389px; left: 76px; -webkit-transform: rotate(-0.21rad)  ; -moz-transform: rotate(-0.21rad)  ; transform: rotate(-0.21rad)">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <img src="img/Kompass.png">
             </div>
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 563px; left: 277px; -webkit-transform: rotate(-0.23rad)  ; -moz-transform: rotate(-0.23rad)  ; transform: rotate(-0.23rad)">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 16px;" class="antialias">
                     <font color="#f6b500">Quelle: Hiyotada</font><br>
                 </div>
@@ -305,7 +322,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 433px; left: 792px; -webkit-transform: rotate(0.24rad)  ; -moz-transform: rotate(0.24rad)  ; transform: rotate(0.24rad)">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 16px;" class="antialias">
                     <font color="#f6b500">Quelle: Richard Nevell</font><br>
                 </div>
@@ -320,7 +337,7 @@
 <div id="step-6" class="step" data-x="12000" data-y="1000" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 84px; left: 133px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 48px;" class="antialias">
                     <font color="#d15901">Entdecke die Möglichkeiten...</font><br>
                 </div>
@@ -328,7 +345,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 243px; left: 231px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 99px;" class="antialias">
                     <font color="#ff0000">iOS</font>
                 </div>
@@ -336,7 +353,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 203px; left: 519px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 98px;" class="antialias">
                     <font color="#85cf0d">Android<br></font>
                 </div>
@@ -344,7 +361,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 377px; left: 339px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 53px;" class="antialias">
                     <font color="#fff800">Windows<br></font><div align="center"><font color="#fff800">Mobile<br></font></div>
                 </div>
@@ -352,7 +369,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 390px; left: 631px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 49px;" class="antialias">
                     <font color="#8c3ef1">Blackberry</font>
                 </div>
@@ -360,7 +377,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 429px; left: 143px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 42px;" class="antialias">
                     <font color="#a40f74">WebOS</font>
                 </div>
@@ -368,7 +385,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 550px; left: 565px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 42px;" class="antialias">
                     <font color="#89b2f5">Symbian</font>
                 </div>
@@ -376,7 +393,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 558px; left: 295px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 42px;" class="antialias">
                     <font color="#82eaaf">Taizen</font>
                 </div>
@@ -391,7 +408,7 @@
 <div id="step-7" class="step" data-x="12000" data-y="1000" data-rotate-y="90" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 198px; left: 479px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 53px;" class="antialias">
                     <font color="#ff0000">Objective C</font>
                 </div>
@@ -399,7 +416,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 248px; left: 252px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 98px;" class="antialias">
                     <font color="#85cf0d">Java<br></font>
                 </div>
@@ -407,7 +424,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 360px; left: 572px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 49px;" class="antialias">
                     <font color="#8c3ef1">C/C++</font>
                 </div>
@@ -415,7 +432,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 454px; left: 437px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 53px;" class="antialias">
                     <font color="#fffd00">C#</font>
                 </div>
@@ -423,7 +440,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 429px; left: 143px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 42px;" class="antialias">
                     <font color="#a40f74">JavaScript</font>
                 </div>
@@ -431,7 +448,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 71px; left: 141px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 48px;" class="antialias">
                     <font color="#f6b500">... und ihre Eigenheiten ...</font><br>
                 </div>
@@ -439,7 +456,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 506px; left: 601px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 42px;" class="antialias">
                     <font color="#90f292">HTML5<br></font><div align="center"><font color="#90f292">CSS3<br></font></div>
                 </div>
@@ -454,7 +471,7 @@
 <div id="step-8" class="step" data-x="18000" data-y="1000" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 187px; left: 148px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 51px;" class="antialias">
                     <font color="#ff0000">Für jede Plattform eine andere<br>Programmiersprache, also<br><br>&nbsp;&nbsp; - mehrfache Entwicklungszeit,<br>&nbsp;&nbsp; - mehrfacher Testaufwand,<br>&nbsp;&nbsp; - mehrfacher Wartungsaufwand</font><br>
                 </div>
@@ -469,7 +486,7 @@
 <div id="step-9" class="step" data-x="18000" data-y="5000" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 40px; left: 184px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 64px;" class="antialias">
                     <font color="#f6b500">Plattformunabhängig<br></font><div align="center"><font color="#f6b500">durch WebApps</font><br></div>
                 </div>
@@ -483,7 +500,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 478px; left: 98px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 36px;" class="antialias">
                     <ul><li><font color="#75f800">Formularelemente (z.B. Datum, Slider, ...)</font></li><li><font color="#75f800">Audio/Video, Canvas, SVG, ...</font></li><li><font color="#75f800">Offline-Support, Local Storage, WebSockets</font></li><li><font color="#75f800">Transformationen, Animationen, Schriften, Schatten<br></font></li></ul>
                 </div>
@@ -498,7 +515,7 @@
 <div id="step-10" class="step" data-x="18000" data-y="9000" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 211px; left: 118px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 51px;" class="antialias">
                     <font color="#75f800">Vorteile:</font>
                 </div>
@@ -506,7 +523,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 212px; left: 646px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 51px;" class="antialias">
                     <font color="#ff0000">Nachteile:</font>
                 </div>
@@ -514,7 +531,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 357px; left: 580px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 37px;" class="antialias">
                     <font color="#ff0000">(Noch) langsamer<br><br>Nicht ohne weiteres im<br>AppStore/Google Play<br>zu veröffentlichen</font><br>
                 </div>
@@ -522,7 +539,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 53px; left: 349px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 64px;" class="antialias">
                     <font color="#f6b500">WebApps</font>
                 </div>
@@ -530,7 +547,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 348px; left: 70px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 37px;" class="antialias">
                     <font color="#75f800">Web-Anwendung<br>"dazu geschenkt"<br><br>Testbar direkt im Browser<br> ohne Compilierung</font><br>
                 </div>
@@ -545,7 +562,7 @@
 <div id="step-11" class="step" data-x="12000" data-y="9000" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 53px; left: 183px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 64px;" class="antialias">
                     <font color="#f6b500">WebApp - Frameworks</font><br>
                 </div>
@@ -553,13 +570,13 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 260px; left: 207px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <img src="img/dojo.png">
             </div>
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 259px; left: 640px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <img src="img/jquery-mobile-logo-03.png">
             </div>
         </div>
@@ -577,7 +594,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 419px; left: 139px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 43px;" class="antialias">
                     <font color="#f6b500">Weitere können gut kombiniert werden:</font><br>
                 </div>
@@ -585,7 +602,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 527px; left: 384px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <img src="img/requirejs.png">
             </div>
         </div>
@@ -604,7 +621,7 @@
 <div id="step-12" class="step" data-x="6000" data-y="9000" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 54px; left: 87px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 48px;" class="antialias">
                     <font color="#f6b500">Hybride Apps</font><br>
                 </div>
@@ -616,7 +633,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 144px; left: 447px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 41px;" class="antialias">
                     <font color="#f6b500">Gartner:<br>"More than half of mobile<br>apps deployed by enterprise<br>by 2016 will be hybrid"</font><br>
                 </div>
@@ -624,13 +641,13 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 450px; left: 400px;width: 291px; height: 165.34px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <img src="img/titanium-sign-up-graphic.png">
             </div>
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 612px; left: 453px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 32px;" class="antialias">
                     <div align="center"><font color="#f6b500">Appcelerator<br>Titanium<br></font></div>
                 </div>
@@ -638,7 +655,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 612px; left: 710px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 32px;" class="antialias">
                     <div align="center"><font color="#f6b500">PhoneGap<br>Apache Cordova<br></font></div>
                 </div>
@@ -646,13 +663,13 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 423px; left: 774px;width: 91px; height: 106.07px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <img src="img/PhoneGap.png">
             </div>
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 534px; left: 714px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <img src="img/Cordova.png">
             </div>
         </div>
@@ -665,7 +682,7 @@
 <div id="step-13" class="step" data-x="0" data-y="9000" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 100px; left: 451px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 68px;" class="antialias">
                     <font color="#f6b500">Die einzig richtige<br></font><div align="center"><font color="#f6b500">Mobilentwicklung</font><br></div>
                 </div>
@@ -677,7 +694,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 357px; left: 453px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 42px;" class="antialias">
                     <font color="#f6b500">Wichtiger als die<br>Programmiersprache<br>ist die Software-<br>Architektur</font><br>
                 </div>
@@ -696,7 +713,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 206px; left: 442px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 35px;" class="antialias">
                     <font color="#f6b500">Nutzung von Standards<br><br>One-Page-Apps<br><br>Offline-Fähigkeit<br><br>Automatisierter Test</font><br>
                 </div>
@@ -707,7 +724,6 @@
 
 </div>
 
-
 <div id="step-15" class="step" data-x="0" data-y="5000" data-rotate-y="90" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 100px; left: 40px; width: 500px">
@@ -715,7 +731,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 210px; left: 566px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1, 1); transform: scale(1, 1); scale(1, 1)">
+            <div class="transformContainer">
                 <div style="font-size: 35px;" class="antialias">
                     <font color="#f6b500">Nutzung von Standards<br><br>Klares, einfaches API,<br>z.B. REST / JSON<br><br>Automatisiert testbar<br></font>
                 </div>
@@ -723,9 +739,33 @@
         </div>
 
     </div>
-
 </div>
 
+<div id="step-end" class="step" data-x="-50000" data-y="100000" data-z="150000" data-rotate-y="90" data-scale="100">
+    <div class="solid-bg-white slideContainer" style="width: 1024px; height: 768px">
+        <div class="transformContainer">
+            <img src="img/Joachim.png" style="float: left; padding: 20px; width: 300px"/>
+            <img src="img/justso.png" style="float: right; padding: 20px; width:150px"/>
+            <div style="font-size: 48px; padding-top: 30px" class="antialias">
+                Joachim Schirrmacher<br />
+                Justso GmbH
+            </div>
+            <div style="font-size: 32px; padding-top: 30px" class="antialias">
+                c/o Start FFM<br />
+                Seelenberger Straße 2<br />
+                Frankfurt am Main<br />
+                <a href="http://justso.de/">http://justso.de/</a>
+            </div>
+            <div style="font-size: 32px; padding-top: 30px" class="antialias">
+                <a href="http://twitter.com/jschirrmacher">@jschirrmacher</a><br />
+            </div>
+
+            <div style="font-size: 50px; clear: both; padding: 60px 30px; text-align: center" class="antialias">
+                Danke für's zuhören!
+            </div>
+        </div>
+    </div>
+</div>
 
 <div id="overview" class="step" data-x="9000" data-y="7000" data-scale="20"></div>
 </div>

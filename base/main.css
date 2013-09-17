@@ -33,8 +33,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body, body .fwrk-ignore {
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: rgb(51,51,51);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: normal;
 }
 
@@ -292,7 +291,7 @@ body {
 /*
     ... and we will show it when the first step (with id 'bored') is active.
 */
-.impress-on-step-1 .hint {
+.impress-on-step-0 .hint {
     /*
         We remove the transparency and position the hint in its default fixed
         position.
