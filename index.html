@@ -46,8 +46,18 @@
             height: 100%;
         }
 
-        .slideContainer #step-9>div {
-            background: black url("img/Erde.png") 0 250px no-repeat;
+        #step-9>div {
+            background: black url("img/Erde.png") 0 350px no-repeat;
+            background-size: 100%;
+            -webkit-transition: all 10s linear;
+            -moz-transition:    all 10s linear;
+            -ms-transition:     all 10s linear;
+            -o-transition:      all 10s linear;
+            transition:         all 10s linear;
+        }
+        #step-9.active>div {
+            background-position: 0 750px;
+            background-size: 150%;
         }
         #step-start, #step-start a:link, #step-start a:visited,
         #step-end,   #step-end   a:link, #step-end   a:visited {
@@ -287,16 +297,18 @@
 
         <div class="componentContainer fwrk-ignore " style="top: 252px; left: 169px;">
             <div class="transformContainer">
-                <div style="font-size: 32px;">
-                    <font color="#75f800">Zugriff auf Hardwarefunktionen<br>z.B. Kamera, GPS, Kompass, ...</font><br>
+                <div style="font-size: 32px; color: #75f800">
+                    Zugriff auf Hardwarefunktionen<br>
+                    z.B. Kamera, GPS, Kompass, ...
                 </div>
             </div>
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 448px; left: 427px;">
             <div class="transformContainer">
-                <div style="font-size: 32px;">
-                    <font color="#75f800">Maximale Performance<br>-&gt; z.B. sanftes Scrollen</font>
+                <div style="font-size: 32px; color: #75f800">
+                    Maximale Performance<br>
+                    &rarr; z.B. sanftes Scrollen
                 </div>
             </div>
         </div>
@@ -339,13 +351,13 @@
         <div class="componentContainer fwrk-ignore " style="top: 84px; left: 133px;">
             <div class="transformContainer">
                 <div style="font-size: 48px;">
-                    <font color="#d15901">Entdecke die Möglichkeiten...</font><br>
+                    Entdecke die Möglichkeiten...
                 </div>
             </div>
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 243px; left: 231px;">
-            <div class="transformContainer">
+            <div class="transformContainer wait1">
                 <div style="font-size: 99px;">
                     <font color="#ff0000">iOS</font>
                 </div>
@@ -353,7 +365,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 203px; left: 519px;">
-            <div class="transformContainer">
+            <div class="transformContainer wait3">
                 <div style="font-size: 98px;">
                     <font color="#85cf0d">Android<br></font>
                 </div>
@@ -361,7 +373,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 377px; left: 339px;">
-            <div class="transformContainer">
+            <div class="transformContainer wait5">
                 <div style="font-size: 53px;">
                     <font color="#fff800">Windows<br></font><div align="center"><font color="#fff800">Mobile<br></font></div>
                 </div>
@@ -369,7 +381,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 390px; left: 631px;">
-            <div class="transformContainer">
+            <div class="transformContainer wait6">
                 <div style="font-size: 49px;">
                     <font color="#8c3ef1">Blackberry</font>
                 </div>
@@ -377,7 +389,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 429px; left: 143px;">
-            <div class="transformContainer">
+            <div class="transformContainer wait6">
                 <div style="font-size: 42px;">
                     <font color="#a40f74">WebOS</font>
                 </div>
@@ -385,7 +397,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 550px; left: 565px;">
-            <div class="transformContainer">
+            <div class="transformContainer wait6">
                 <div style="font-size: 42px;">
                     <font color="#89b2f5">Symbian</font>
                 </div>
@@ -393,7 +405,7 @@
         </div>
 
         <div class="componentContainer fwrk-ignore " style="top: 558px; left: 295px;">
-            <div class="transformContainer">
+            <div class="transformContainer wait6">
                 <div style="font-size: 42px;">
                     <font color="#82eaaf">Taizen</font>
                 </div>
@@ -407,46 +419,6 @@
 
 <div id="step-7" class="step" data-x="12000" data-y="1000" data-rotate-y="90" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
-        <div class="componentContainer fwrk-ignore " style="top: 198px; left: 479px;">
-            <div class="transformContainer">
-                <div style="font-size: 53px;">
-                    <font color="#ff0000">Objective C</font>
-                </div>
-            </div>
-        </div>
-
-        <div class="componentContainer fwrk-ignore " style="top: 248px; left: 252px;">
-            <div class="transformContainer">
-                <div style="font-size: 98px;">
-                    <font color="#85cf0d">Java<br></font>
-                </div>
-            </div>
-        </div>
-
-        <div class="componentContainer fwrk-ignore " style="top: 360px; left: 572px;">
-            <div class="transformContainer">
-                <div style="font-size: 49px;">
-                    <font color="#8c3ef1">C/C++</font>
-                </div>
-            </div>
-        </div>
-
-        <div class="componentContainer fwrk-ignore " style="top: 454px; left: 437px;">
-            <div class="transformContainer">
-                <div style="font-size: 53px;">
-                    <font color="#fffd00">C#</font>
-                </div>
-            </div>
-        </div>
-
-        <div class="componentContainer fwrk-ignore " style="top: 429px; left: 143px;">
-            <div class="transformContainer">
-                <div style="font-size: 42px;">
-                    <font color="#a40f74">JavaScript</font>
-                </div>
-            </div>
-        </div>
-
         <div class="componentContainer fwrk-ignore " style="top: 71px; left: 141px;">
             <div class="transformContainer">
                 <div style="font-size: 48px;">
@@ -455,8 +427,48 @@
             </div>
         </div>
 
+        <div class="componentContainer fwrk-ignore " style="top: 198px; left: 479px;">
+            <div class="transformContainer wait1">
+                <div style="font-size: 53px;">
+                    <font color="#ff0000">Objective C</font>
+                </div>
+            </div>
+        </div>
+
+        <div class="componentContainer fwrk-ignore " style="top: 248px; left: 252px;">
+            <div class="transformContainer wait3">
+                <div style="font-size: 98px;">
+                    <font color="#85cf0d">Java<br></font>
+                </div>
+            </div>
+        </div>
+
+        <div class="componentContainer fwrk-ignore " style="top: 360px; left: 572px;">
+            <div class="transformContainer wait4">
+                <div style="font-size: 49px;">
+                    <font color="#8c3ef1">C/C++</font>
+                </div>
+            </div>
+        </div>
+
+        <div class="componentContainer fwrk-ignore " style="top: 454px; left: 437px;">
+            <div class="transformContainer wait6">
+                <div style="font-size: 53px;">
+                    <font color="#fffd00">C#</font>
+                </div>
+            </div>
+        </div>
+
+        <div class="componentContainer fwrk-ignore " style="top: 429px; left: 143px;">
+            <div class="transformContainer wait6">
+                <div style="font-size: 42px;">
+                    <font color="#a40f74">JavaScript</font>
+                </div>
+            </div>
+        </div>
+
         <div class="componentContainer fwrk-ignore " style="top: 506px; left: 601px;">
-            <div class="transformContainer">
+            <div class="transformContainer wait6">
                 <div style="font-size: 42px;">
                     <font color="#90f292">HTML5<br></font><div align="center"><font color="#90f292">CSS3<br></font></div>
                 </div>
@@ -472,8 +484,13 @@
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 187px; left: 148px;">
             <div class="transformContainer">
-                <div style="font-size: 51px;">
-                    <font color="#ff0000">Für jede Plattform eine andere<br>Programmiersprache, also<br><br>&nbsp;&nbsp; - mehrfache Entwicklungszeit,<br>&nbsp;&nbsp; - mehrfacher Testaufwand,<br>&nbsp;&nbsp; - mehrfacher Wartungsaufwand</font><br>
+                <div style="font-size: 51px; color: #ff0000">
+                    Für jede Plattform eine andere<br>Programmiersprache, also
+                    <ul style="padding: 40px;">
+                        <li class="wait2">mehrfache Entwicklungszeit,</li>
+                        <li class="wait4">mehrfacher Testaufwand,</li>
+                        <li class="wait6">mehrfacher Wartungsaufwand</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -502,8 +519,13 @@
 
         <div class="componentContainer fwrk-ignore " style="top: 478px; left: 98px;">
             <div class="transformContainer">
-                <div style="font-size: 36px;">
-                    <ul><li><font color="#75f800">Formularelemente (z.B. Datum, Slider, ...)</font></li><li><font color="#75f800">Audio/Video, Canvas, SVG, ...</font></li><li><font color="#75f800">Offline-Support, Local Storage, WebSockets</font></li><li><font color="#75f800">Transformationen, Animationen, Schriften, Schatten<br></font></li></ul>
+                <div style="font-size: 36px; color: #75f800">
+                    <ul>
+                        <li>Formularelemente (z.B. Datum, Slider, ...)</li>
+                        <li class="wait2">Audio/Video, Canvas, SVG, ...</li>
+                        <li class="wait4">Offline-Support, Local Storage, WebSockets</li>
+                        <li class="wait6">Transformationen, Animationen, Schriften, Schatten</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -688,8 +710,9 @@
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 100px; left: 451px;">
             <div class="transformContainer">
-                <div style="font-size: 68px;">
-                    Die einzig richtige<br></font><div align="center"><font color="#f6b500">Mobilentwicklung<br></div>
+                <div style="font-size: 68px; text-align: center">
+                    Die einzig richtige<br>
+                    Mobilentwicklung
                 </div>
             </div>
         </div>
