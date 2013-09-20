@@ -148,10 +148,12 @@ body {
 
 .impress-enabled .step.active { opacity: 1 }
 
-.step .wait1, .step .wait2, .step .wait3, .step .wait4, .step .wait5, .step .wait6 {
+.step .wait1, .step .wait2, .step .wait3, .step .wait4, .step .wait5,
+.step .wait6, .step .wait7, .step .wait8, .step .wait9, .step .wait10 {
     opacity: 0;
 }
-.step.active .wait1, .step.active .wait2, .step.active .wait3, .step.active .wait4, .step.active .wait5, .step.active .wait6 {
+.step.active .wait1, .step.active .wait2, .step.active .wait3, .step.active .wait4, .step.active .wait5,
+.step.active .wait6, .step.active .wait7, .step.active .wait8, .step.active .wait9, .step.active .wait10 {
     opacity: 1;
 }
 .step .wait1 {
@@ -216,6 +218,13 @@ body {
     -ms-transition:     opacity 1s ease-in-out 9s;
     -o-transition:      opacity 1s ease-in-out 9s;
     transition:         opacity 1s ease-in-out 9s;
+}
+.step .wait10 {
+    -webkit-transition: opacity 1s ease-in-out 10s;
+    -moz-transition:    opacity 1s ease-in-out 10s;
+    -ms-transition:     opacity 1s ease-in-out 10s;
+    -o-transition:      opacity 1s ease-in-out 10s;
+    transition:         opacity 1s ease-in-out 10s;
 }
 
 .blink div {
