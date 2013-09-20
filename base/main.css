@@ -196,6 +196,56 @@ body {
     -o-transition:      opacity 1s ease-in-out 6s;
     transition:         opacity 1s ease-in-out 6s;
 }
+.step .wait7 {
+    -webkit-transition: opacity 1s ease-in-out 7s;
+    -moz-transition:    opacity 1s ease-in-out 7s;
+    -ms-transition:     opacity 1s ease-in-out 7s;
+    -o-transition:      opacity 1s ease-in-out 7s;
+    transition:         opacity 1s ease-in-out 7s;
+}
+.step .wait8 {
+    -webkit-transition: opacity 1s ease-in-out 8s;
+    -moz-transition:    opacity 1s ease-in-out 8s;
+    -ms-transition:     opacity 1s ease-in-out 8s;
+    -o-transition:      opacity 1s ease-in-out 8s;
+    transition:         opacity 1s ease-in-out 8s;
+}
+.step .wait9 {
+    -webkit-transition: opacity 1s ease-in-out 9s;
+    -moz-transition:    opacity 1s ease-in-out 9s;
+    -ms-transition:     opacity 1s ease-in-out 9s;
+    -o-transition:      opacity 1s ease-in-out 9s;
+    transition:         opacity 1s ease-in-out 9s;
+}
+
+.blink div {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 50s;
+    animation-duration: 50s;
+}
+.blink div:nth-of-type(1) {
+    animation-name: fadingAnimation1;
+    -webkit-animation-name: fadingAnimation1;
+}
+.blink div:nth-of-type(2) {
+    animation-name: fadingAnimation2;
+    -webkit-animation-name: fadingAnimation2;
+}
+@-webkit-keyframes fadingAnimation1 {
+    0%  { opacity:0;}  20%  {opacity:0;}  21%  {opacity:1;}  29%  {opacity:1;}   30%  {opacity:0;}  100%  {opacity:0;}
+}
+@keyframes fadingAnimation1 {
+    0%  { opacity:0;}  20%  {opacity:0;}  21%  {opacity:1;}  29%  {opacity:1;}   30%  {opacity:0;}  100%  {opacity:0;}
+}
+@-webkit-keyframes fadingAnimation2 {
+    0%  { opacity:0;}  24%  {opacity:0;}  25%  {opacity:1;}  30%  {opacity:1;}   31%  {opacity:0;}  100%  {opacity:0;}
+}
+@keyframes fadingAnimation2 {
+    0%  { opacity:0;}  24%  {opacity:0;}  25%  {opacity:1;}  30%  {opacity:1;}   31%  {opacity:0;}  100%  {opacity:0;}
+}
 
 /*
     And now we start to style each step separately.

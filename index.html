@@ -46,7 +46,32 @@
             height: 100%;
         }
 
-        #step-9>div {
+        #step-start {
+            color: #4e9e35;
+            font-size: 24px;
+        }
+        #step-start #name {
+            font-size: 36px;
+            padding: 80px 5px 30px 5px;
+        }
+        #step-start .block {
+            float: left;
+            padding: 10px 5px;
+        }
+        #timeline {
+        }
+        #spread {
+        }
+        #tasks {
+        }
+        #motto {
+            padding-top: 30px;
+            font-size: 36px;
+            text-align: center;
+            clear: both;
+        }
+
+        #html5>div {
             background: black url("img/Erde.png") 0 350px no-repeat;
             background-size: 100%;
             -webkit-transition: all 10s linear;
@@ -55,12 +80,13 @@
             -o-transition:      all 10s linear;
             transition:         all 10s linear;
         }
-        #step-9.active>div {
+        #html5.active>div {
             background-position: 0 750px;
             background-size: 150%;
         }
-        #step-start, #step-start a:link, #step-start a:visited,
-        #step-end,   #step-end   a:link, #step-end   a:visited {
+        #step-end,
+        #step-end a:link,
+        #step-end a:visited {
             color: #4e9e35;
         }
     </style>
@@ -109,16 +135,16 @@
 <div class="bg">
 <div id="impress" style="position: absolute;
     -webkit-transform-origin: 0% 0%;
-    transition: all 1000ms ease-in-out 500ms;
-    -webkit-transition: all 1000ms ease-in-out 500ms;
+    transition: all 1s ease-in-out 500ms;
+    -webkit-transition: all 1s ease-in-out 500ms;
     -webkit-transform-style: preserve-3d;
     top: 50%;
     left: 50%;
     -webkit-transform: perspective(3000px) scale(0.3333333333333333);">
 <div style="position: absolute;
     -webkit-transform-origin: 0% 0%;
-    transition: all 1000ms ease-in-out 0ms;
-    -webkit-transition: all 1000ms ease-in-out 0ms;
+    transition: all 1s ease-in-out 0s;
+    -webkit-transition: all 1s ease-in-out 0s;
     -webkit-transform-style: preserve-3d;
     -webkit-transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg) translate3d(-500px, -1000px, 0px);">
 
@@ -128,168 +154,114 @@
         <div class="transformContainer">
             <img src="img/Joachim.png" style="float: left; padding: 20px; width: 300px"/>
             <img src="img/justso.png" style="float: right; padding: 20px; width:150px"/>
-            <div style="font-size: 48px; padding-top: 30px">
-                Joachim Schirrmacher<br />
-                Justso GmbH
+            <div id="name">Joachim Schirrmacher</div>
+            <div id="timeline" class="block">
+                <div>1980 Software-Entwicklung</div>
+                <div>1992 Hypertext</div>
+                <div>1994 Web</div>
+                <div>2013 Justso</div>
             </div>
-            <div style="font-size: 32px; padding-top: 30px">
-                c/o Start FFM<br />
-                Seelenberger Straße 2<br />
-                Frankfurt am Main<br />
-                <a href="http://justso.de/">http://justso.de/</a>
+            <div id="spread" class="block wait4">
+                <div>Kleine und große Firmen</div>
+                <div>Kleine und große Projekte</div>
+                <div>Kleine und große Kunden</div>
+                <div>Fremde und eigene Firmen</div>
             </div>
-            <div style="font-size: 32px; padding-top: 30px">
-                <a href="http://twitter.com/jschirrmacher">@jschirrmacher</a><br />
+            <div id="tasks" class="block wait8">
+                <div>Vom Programmierer</div>
+                <div>zum Technik-Vorstand - CTO</div>
             </div>
-
-            <div style="font-size: 50px; clear: both; padding: 60px 30px; text-align: center">
-                Die einzig wahre App-Entwicklung
+            <div id="motto" class="wait9">
+                Justso verwirklicht Ideen innovativer Unternehmer.
             </div>
         </div>
     </div>
 </div>
 
-<div id="step-1" class="step" data-x="0" data-y="1000" data-scale="3">
+<div id="step-titel" class="step" data-x="0" data-y="1000" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
-        <div class="componentContainer fwrk-ignore " style="top: 156px; left: 0px;">
-            <div class="transformContainer">
-                <img src="img/Das%20einzig%20wahre....png">
+        <div class="componentContainer fwrk-ignore " style="top: 84px; left: 133px;">
+            <div style="font-size: 48px;">
+                Die einzig wahre Mobilentwicklung
             </div>
         </div>
 
-        <div class="componentContainer fwrk-ignore " style="top: 547px; left: 168px;">
-            <div class="transformContainer">
-                <div style="font-size: 89px;">
-                    App-Entwicklung<br>
+        <div class="blink">
+            <div class="componentContainer fwrk-ignore" style="top: 258px; left: 157px;
+                    -webkit-transform: rotate(-0.22rad);
+                    -moz-transform: rotate(-0.22rad);
+                    transform: rotate(-0.22rad);">
+                <div class="transformContainer" style="-webkit-transform: scale(0.39, 0.39); transform: scale(0.39, 0.39); scale(0.39, 0.39)">
+                    <img src="img/Smartphones%202007-2012.jpg">
+                </div>
+            </div>
+            <div class="componentContainer fwrk-ignore" style="top: 258px; left: 457px;
+                    -webkit-transform: rotate(0.25rad);
+                    -moz-transform: rotate(0.25rad);
+                    transform: rotate(0.25rad);">
+                <div class="transformContainer" style="-webkit-transform: scale(0.59, 0.59); transform: scale(0.59, 0.59); scale(0.59, 0.59)">
+                    <img src="img/Smartphones%202010-2017.jpg">
                 </div>
             </div>
         </div>
-
-        <div class="componentContainer fwrk-ignore " style="top: 67px; left: 233px;">
-            <div class="transformContainer">
-                <div style="font-size: 72px;">
-                    Die einzig wahre
-                </div>
-            </div>
-        </div>
-
-        <div class="componentContainer fwrk-ignore " style="top: 516px; left: 884px;">
-            <div class="transformContainer">
-                <div style="font-size: 14px;">
-                    Quelle: Warsteiner
-                </div>
-            </div>
-        </div>
-
     </div>
-
 </div>
 
 
-<div id="step-2" class="step" data-x="6000" data-y="1000" data-scale="3">
+<div id="step-apptypes-native" class="step" data-x="6000" data-y="5000" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 84px; left: 133px;">
             <div class="transformContainer">
                 <div style="font-size: 48px;">
-                    Warum überhaupt Mobilentwicklung?
+                    Möglichkeiten der App-Entwicklung
                 </div>
             </div>
         </div>
 
-        <div class="componentContainer fwrk-ignore " style="top: 166px; left: 168px;width: 788px; height: 516.4px;">
-            <div class="transformContainer" style="-webkit-transform: scale(0.89, 0.89); transform: scale(0.89, 0.89); scale(0.89, 0.89)">
-                <img src="img/Smartphones%202007-2012.jpg">
-            </div>
-        </div>
-
-        <div class="componentContainer fwrk-ignore " style="top: 659px; left: 164px;">
+        <div class="componentContainer fwrk-ignore " style="top: 184px; left: 133px;">
             <div class="transformContainer">
-                <div style="font-size: 48px;">
-                    Verbreitung ist gewaltig gestiegen
+                <div style="font-size: 36px;">
+                    z.B. für iOS
                 </div>
             </div>
         </div>
 
-    </div>
-
-</div>
-
-
-<div id="step-3" class="step" data-x="6000" data-y="1000" data-z="-5000" data-scale="3">
-    <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
-        <div class="componentContainer fwrk-ignore " style="top: 200px; left: 171px;width: 762px; height: 518.37px;">
-            <div class="transformContainer" style="-webkit-transform: scale(0.86, 0.86); transform: scale(0.86, 0.86); scale(0.86, 0.86)">
-                <img src="img/Smartphones%202010-2017.jpg">
-            </div>
-        </div>
-
-        <div class="componentContainer fwrk-ignore " style="top: 84px; left: 133px;">
-            <div class="transformContainer">
-                <div style="font-size: 48px;">
-                    ...und es werden immer mehr!
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-
-<div id="step-4" class="step" data-x="6000" data-y="5000" data-scale="3">
-    <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
-        <div class="componentContainer fwrk-ignore " style="top: 84px; left: 133px;">
-            <div class="transformContainer">
-                <div style="font-size: 48px;">
-                    ... und immer neue Anwendungen ...
-                </div>
-            </div>
-        </div>
-
-        <div class="componentContainer fwrk-ignore " style="top: 258px; left: -257px; -webkit-transform: rotate(-0.22rad)  ; -moz-transform: rotate(-0.22rad)  ; transform: rotate(-0.22rad)  ; width: 834px; height: 415.29px;">
-            <div class="transformContainer" style="-webkit-transform: scale(0.85, 0.85); transform: scale(0.85, 0.85); scale(0.85, 0.85)">
-                <img src="img/c1.png">
-            </div>
-        </div>
-
-        <div class="componentContainer fwrk-ignore " style="top: 225px; left: 77px;">
-            <div class="transformContainer">
-                <div style="font-size: 34px;">
-                    Navigation...
-                </div>
-            </div>
-        </div>
-
-        <div class="componentContainer fwrk-ignore " style="top: 243px; left: 354px; -webkit-transform: rotate(0.32rad)  ; -moz-transform: rotate(0.32rad)  ; transform: rotate(0.32rad)  ; width: 266px; height: 513.68px;">
+        <div class="componentContainer fwrk-ignore " style="top: 243px; left: 54px; -webkit-transform: rotate(0.32rad)  ; -moz-transform: rotate(0.32rad)  ; transform: rotate(0.32rad)  ; width: 266px; height: 513.68px;">
             <div class="transformContainer" style="-webkit-transform: scale(0.68, 0.68); transform: scale(0.68, 0.68); scale(0.68, 0.68)">
-                <img src="img/iphone.png">
+                <img src="img/iphone.png" />
             </div>
         </div>
 
-        <div class="componentContainer fwrk-ignore " style="top: 648px; left: 316px;">
-            <div class="transformContainer">
-                <div style="font-size: 34px;">
-                    Bestellung...<br>
-                </div>
+        <div class="componentContainer" style="top: 243px; left: 350px;">
+            <div class="transformContainer" style="-webkit-transform: scale(0.6, 0.6); transform: scale(0.6, 0.6); scale(0.6, 0.6)">
+                <img src="img/xcode.png" />
             </div>
         </div>
-
-        <div class="componentContainer fwrk-ignore " style="top: 211px; left: 540px; -webkit-transform: rotate(-0.1rad)  ; -moz-transform: rotate(-0.1rad)  ; transform: rotate(-0.1rad)  ; width: 261px; height: 380.44px;">
-            <div class="transformContainer" style="-webkit-transform: scale(1.11, 1.11); transform: scale(1.11, 1.11); scale(1.11, 1.11)">
-                <img src="img/Blackberry.png">
-            </div>
-        </div>
-
-        <div class="componentContainer fwrk-ignore " style="top: 540px; left: 714px;">
-            <div class="transformContainer">
-                <div style="font-size: 34px;">
-                    Nachrichten...
-                </div>
-            </div>
-        </div>
-
     </div>
+</div>
 
+<div id="step-apptypes-android" class="step" data-x="6000" data-y="1000" data-scale="3">
+    <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
+        <div class="componentContainer fwrk-ignore " style="top: 84px; left: 133px;">
+            <div class="transformContainer">
+                <div style="font-size: 36px;">
+                    ...oder Android
+                </div>
+            </div>
+        </div>
+
+        <div class="componentContainer fwrk-ignore " style="top: 443px; left: -154px; -webkit-transform: rotate(-0.22rad)  ; -moz-transform: rotate(-0.22rad)  ; transform: rotate(-0.22rad)  ; width: 834px; height: 415.29px;">
+            <div class="transformContainer" style="-webkit-transform: scale(0.85, 0.85); transform: scale(0.85, 0.85); scale(0.85, 0.85)">
+                <img src="img/c1.png" />
+            </div>
+        </div>
+
+        <div class="componentContainer" style="top: 143px; left: 350px;">
+            <div class="transformContainer" style="-webkit-transform: scale(0.6, 0.6); transform: scale(0.6, 0.6); scale(0.6, 0.6)">
+                <img src="img/Android%20studio.png" />
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -508,7 +480,7 @@
 </div>
 
 
-<div id="step-9" class="step" data-x="18000" data-y="5000" data-scale="3">
+<div id="html5" class="step" data-x="18000" data-y="5000" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 40px; left: 184px;">
             <div class="transformContainer">
@@ -759,11 +731,8 @@
             </div>
         </div>
 
+
     </div>
-
-</div>
-
-<div id="step-15" class="step" data-x="0" data-y="5000" data-rotate-y="90" data-scale="3">
     <div class="solid-bg-black slideContainer" style="width: 1024px; height: 768px">
         <div class="componentContainer fwrk-ignore " style="top: 100px; left: 40px; width: 500px">
             <img src="img/server.png">
@@ -780,6 +749,30 @@
             </div>
         </div>
 
+    </div>
+
+<div id="step-outro" class="step" data-x="0" data-y="5000" data-rotate-y="90" data-scale="3">
+        <div class="componentContainer fwrk-ignore " style="top: 156px; left: 0px;">
+            <div class="transformContainer">
+                <img src="img/Das%20einzig%20wahre....png">
+            </div>
+        </div>
+
+        <div class="componentContainer fwrk-ignore " style="top: 67px; left: 233px;">
+            <div class="transformContainer">
+                <div style="font-size: 72px;">
+                    Die einzig wahre
+                </div>
+            </div>
+        </div>
+
+        <div class="componentContainer fwrk-ignore " style="top: 516px; left: 884px;">
+            <div class="transformContainer">
+                <div style="font-size: 14px;">
+                    Quelle: Warsteiner
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
